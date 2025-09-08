@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="The Student Hub Team">
+    <meta name="keywords" content="Study Hub, Student Productivity, Pomodoro Timer, Study Tracker, Student Dashboard, The Student Hub, Focus, Productivity App">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>The Student Hub - Pomodoro Timer</title>
+    <meta name="description" content="Stay focused and productive with The Student Hub's Pomodoro Timer and personalized study environments.">
+
+</head>
+<body>
+    <div class="scenery-wrapper">
+        <header class="scenery__header">
+            <label class="dashboard__menu_button" for="dashboard__menu" rol="button">=</label>
+                <input id="dashboard__menu" type="checkbox">
+            <nav class="dashboard__nav">
+                <a class="dashboard__link_home" href="index.html">
+                    <span class="material-symbols-outlined home-icon home-icon home-icon-dash">home</span>
+                </a>
+                <ul class="dashboard__nav__ul">
+                    <li class="dashboard__nav__item">
+                        <a class="dashboard__nav__link" href="dashboard.html">Dashboard</a></li>
+                    <li class="dashboard__nav__item">
+                        <a class="dashboard__nav__link" href="achievements.html">Achievements</a></li>
+                    <li class="dashboard__nav__item">
+                        <a class="dashboard__nav__link" href="#">Log out</a></li>
+                </ul>
+                
+            </nav>
+            <span class="dashboard__logo">TSH</span>
+        </header>
+        <main class="scenery__main scenery__cafe">
+            <div class="scenery__clock_container">
+                <div class="scenery__clock_circle">
+                    <span class="scenery__clock_mode">Studying</span>
+                    <div class="clock_number">
+                        <div class="scenery__clock_number minutes">25</div>
+                        <div class="scenery__clock_number">:</div>
+                        <div class="scenery__clock_number seconds">00</div>
+                    </div>
+                    <span class="material-symbols-outlined play_circle play" id="btn-play" hidden>play_circle
+                    </span>
+                    <span class="material-symbols-outlined pause" id="btn-pause" hidden> pause
+                    </span>
+                </div>
+                <div class="scenery__sessions-completed">
+                    <div class="session-1">
+
+                    </div>
+                    <div class="session-2">
+
+                    </div>
+                    <div class="session-3">
+
+                    </div>
+                    <div class="session-4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="scenery__buttons_container">
+                <div class="scenery__ambiances">
+                    <button id="btn-beach" class="scenery__button1"> Beach </button>
+                    <button id="btn-garden" class="scenery__button2"> Garden </button>
+                    <button id="btn-forest" class="scenery__button3"> Forest </button>
+                    <button id="btn-cafe" class="scenery__button4"> Café </button>
+                </div>
+                <div class="scenery__soundOn">
+                    <span id="sound-mode"> Sound off </span>
+                    <span id="sound-play"  class="material-symbols-outlined">no_sound</span>
+                    <span id="sound-pause" class="material-symbols-outlined" hidden>volume_up</span>
+                    <audio id="audio" src="../audio/ambience-cafe001-52520.mp3" loop></audio>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="../js/sceneryCode.js"></script>
+</body>
+</html>

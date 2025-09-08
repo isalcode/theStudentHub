@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="The Student Hub Team">
+    <meta name="keywords" content="Study Hub, Student Productivity, Pomodoro Timer, Study Tracker, Student Dashboard, The Student Hub, Focus, Productivity App">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>The Student Hub - Sign up</title>
+</head>
+<body>
+    
+    <div class="login--wrapper">
+    <aside class="login__aside">
+
+    </aside>
+    <main class="login__main">
+        <a class="login__link_home" href="index.html">
+            <span class="material-symbols-outlined home-icon">home</span>
+        </a>
+        <span class="login__logo">TSH</span>
+        <div class="login__main__form_container">
+            <form class="login__form">
+                <h2 class="login__form__title">Sign up</h2>
+                <div class="login__input_container">
+                    <label for="name"> Nickname
+                
+                </label>
+                <input id="name" class="login__form__input" type="text">
+                <div class="error nickname-error"></div>
+                </div>
+                <div class="login__input_container">
+                    <label for="username"> Username
+                
+                </label>
+                <input id="username" class="login__form__input" type="text">
+                <div class="error username-error"></div>
+                </div>
+
+                <div class="login__input_container">
+                    <label for="password"> Password
+                    
+                </label>
+                <input id="password" class="login__form__input" type="password">
+                </div>
+
+                <div class="login__input_container">
+                    <label for="password2"> Confirm password
+                    
+                </label>
+                <input id="password2" class="login__form__input" type="password">
+                <div class="error confirmPassword-error"></div>
+                </div>
+                
+                <span class="login__form__noaccount">
+                    Already signed up? <a href="login.html">Log in</a>
+                </span>
+                <input id="registerButton" class="login__form__input input--submit" type="submit" value="ENTER">
+            </form>
+        </div>
+    </main>
+    <aside class="login__aside">
+        
+    </aside>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

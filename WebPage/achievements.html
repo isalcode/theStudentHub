@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="The Student Hub Team">
+    <meta name="keywords" content="Study Hub, Student Productivity, Pomodoro Timer, Study Tracker, Student Dashboard, The Student Hub, Focus, Productivity App">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>The Student Hub - Achievements</title>
+    <meta name="description" content="View your study achievements, streaks, and milestones with The Student Hub's progress tracker.">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="achievements-body">
+    
+    <div class="achievements-wrapper">
+        <header class="dashboard__header">
+            <label class="dashboard__menu_button" for="dashboard__menu" rol="button">=</label>
+                <input id="dashboard__menu" type="checkbox">
+            <nav class="dashboard__nav">
+                <a class="dashboard__link_home" href="index.html">
+                    <span class="material-symbols-outlined home-icon home-icon home-icon-dash">home</span>
+                </a>
+                <ul class="dashboard__nav__ul">
+                    <li class="dashboard__nav__item">
+                        <a class="dashboard__nav__link" href="dashboard.html">Dashboard</a></li>
+                    <li class="dashboard__nav__item">
+                        <a class="dashboard__nav__link" href="scenery.html">Scenery</a></li>
+                    <button class="dashboard__nav__item logOut" id="logout">Log out</button>
+                </ul>
+                
+            </nav>
+            <span class="dashboard__logo">TSH</span>
+        </header>
+        <main class="achievements__main">
+            <span>Keep building these habits you're doing great</span>
+            <div class="achievements__grid">
+                <div class="graphic_container1">
+                    <canvas id="chart2" class="achievements__chart"></canvas>
+                </div>
+                <div class="hours_in_total">
+                    <span>Hours in total:</span>
+                    <span id="hoursTotal" class="number">72</span>
+                </div>
+                <div class="Streak">
+                    <span>Streak:</span>
+                    <span id="streak" class="number">0</span>
+                </div>
+                <div class="active_days">
+                    <span>Active days:</span>
+                    <span id="activeDays" class="number">0</span>
+                </div>
+                <div class="hours_day">
+                    <span>Hours/day this month:</span>
+                    <span id="hoursPerDay" class="number">0</span>
+                </div>
+                <div class="achvs">
+                    <div class="ach1">Ach 1</div>
+                    <div class="ach2"> Ach 2</div>
+                    <div class="ach3"> Ach 3</div>
+                </div>
+                <div class="graphic_container2">
+                    <canvas id="chart1" class="achievements__chart2"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/achievement.js"></script>
+</body>
+</html>
