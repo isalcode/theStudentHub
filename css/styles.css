@@ -24,6 +24,45 @@ body{
 }
 
 
+.home__notification-background{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: #213e60aa;
+    height: 100dvh;
+    display: none;
+}
+
+.home__notification{
+    width: 40%;
+    margin: auto;
+    background-color: var(--light_color);
+    font-weight: lighter;
+    position: relative;
+    padding: 30px;
+    height: 10dvh;
+    display: flex;
+    box-shadow: 0 0 30px #0004;
+}
+
+.notification__title{
+    margin: auto;
+}
+
+.home__notification > button{
+    background-color: #d47;
+    color: var(--light_color);
+    border: none;
+    padding: 3px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.home__notification > button:hover{
+    opacity: 0.7;
+}
+
 .header--home__title{
     font-family: 'Arapey';
     font-size: 3em;
