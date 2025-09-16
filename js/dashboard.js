@@ -139,11 +139,11 @@ let subjects = user.subjects || [];
 
 const subjectName = document.getElementById("subject-name");
 const subjectYear = document.getElementById("subject-year");
-const subjectType = document.getElementById("subject-type");
+const subjectColor = document.getElementById("subject-color");
 
 const addSubjectButton = document.getElementById("add-subject-btn");
 
-const createSubject = (name, year, type)=>{
+const createSubject = (name, year, color)=>{
     const error = document.querySelector(".subject-error");
     error.textContent = "";
     year = Number(year);
@@ -167,14 +167,14 @@ const createSubject = (name, year, type)=>{
         subjects.push({
             name: name.trim(),
             year: year,
-            type: type
+            color: color
         });
         subjectName.value = "";
         subjectYear.value = "";
         addSelectionSubject(name);
         user.subjects = subjects;
         localStorage.setItem("users", JSON.stringify(users));
-        console.log("Subject added:", { name, year, type });
+        console.log("Subject added:", { name, year, color });
         if ("Notification" in window) {
                 if (Notification.permission === "granted") {
                     new Notification("Subject added successfully!");
@@ -187,7 +187,7 @@ const createSubject = (name, year, type)=>{
 
 addSubjectButton.addEventListener("click", e =>{
     e.preventDefault();
-    createSubject(subjectName.value, subjectYear.value, subjectType.value);
+    createSubject(subjectName.value, subjectYear.value, subjectColor.value);
 });
 
 //ADD A SESSION
