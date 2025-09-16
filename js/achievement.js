@@ -217,10 +217,19 @@ const hoursBySubject = (subject) => {
 // Generar colores aleatorios (o puedes usar un array de colores predefinidos)
 const getRandomColor = () => '#' + Math.floor(Math.random()*16777215).toString(16);
 
+const getSubjectColor = subject =>{
+    const sub = (user.subjects || []).find(s => s.name === subject);
+    if(sub.color){
+        return sub.color;
+    } else {
+        return getRandomColor();
+    }
+}
+
 const datasets = subjects.map(sub => ({
     label: sub,
     data: hoursBySubject(sub),
-    backgroundColor: getRandomColor()
+    backgroundColor: getSubjectColor(sub)
 }));
 
 
